@@ -1,0 +1,58 @@
+@import "../values/_color.scss";
+
+.main-sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    ;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 250px;
+}
+
+.icon-wrapper {
+    max-width: 160px;
+    max-height: 100px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.main-item-list {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid $--border;
+}
+
+.main-item-list i {
+    display: inline;
+    font-size: 20px;
+    padding-right: 10px;
+    color: $--primary;
+}
+
+
+.main-item-list a {
+    font-size: 16px;
+    text-align: center;
+    color: $--gray;
+    text-decoration: none;
+}
+
+.main-item-list a:hover {
+    font-size: 16px;
+    text-align: center;
+    color: $--dark
+}
+
+.main-item-wrapper {
+    padding-top: 20px;
+}
+
+.main-item-list:nth-child(2) {
+    margin-top: 0px;
+}
