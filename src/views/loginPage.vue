@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="root-center-wrapper">
     <div class="login-container">
       <div class="login-icon">
         <img class="login-icon-wrapper" src="~@/assets/images/icon.png" />
@@ -48,10 +48,10 @@ export default {
     };
   },
   beforeCreate() {
-    document.querySelector("html").setAttribute("class", "html-background");
+    document.querySelector("body").setAttribute("class", "html-background");
   },
   beforeUnmount() {
-    document.querySelector("html").removeAttribute("class");
+    document.querySelector("body").removeAttribute("class");
   },
 };
 </script>
