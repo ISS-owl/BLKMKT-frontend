@@ -25,4 +25,39 @@ $--white: #fff;
 $--neutral: #fff;
 $--darker: #000;
 
-$--border:#525f7f
+$--border:#525f7f;
+$--bg_color:#f8f8f8;
+$--title_color:#636363;
+$--text_color:#626262;
+
+.--primary {
+    color: $--primary;
+}
+
+.--red {
+    color: $--red;
+}
+
+.--yellow {
+    color: $--yellow;
+}
+
+.--teal {
+    color: $--teal;
+}
+
+.--cyan {
+    color: $--cyan;
+}
+
+.--orange {
+    color: $--orange;
+}
+
+.--indigo {
+    color: $--indigo;
+}
+
+.--text_color {
+    color: $--indigo;
+}

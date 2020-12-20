@@ -1,0 +1,71 @@
+@import "../../values/_color.scss";
+
+.userinfo {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    height: 65px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    border-radius: 7px;
+    background-color: $--white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.userinfo-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.userinfo-icon:first-of-type {
+    margin-left: 25px;
+}
+
+.userinfo-icon i {
+    display: inline;
+    font-size: 25px;
+    text-align: center;
+    color: $--text_color;
+}
+
+.userinfo-hover-text {
+    text-align: center;
+}
+
+.userinfo-icon i:hover {
+    color: $--teal;
+}
+
+.userinfo-rightpart {
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.userinfo-img-wrapper {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+}
+
+.userinfo-infomation {
+    height: 40px;
+}
+
+.userinfo-infomation>p {
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: $--text_color;
+    font-size: 14px;
+}
+
+.userinfo-infomation>p:nth-of-type(2) {
+    margin-top: 5px;
+}

@@ -1,0 +1,18 @@
+@import "../values/_color.scss";
+
+.main {
+    background-color: $--bg_color;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-areas:
+        "sidebar rightpart";
+}
+
+.main-sidebar {
+    grid-area: sidebar;
+}
+
+.main-right {
+    grid-area: rightpart;
+}

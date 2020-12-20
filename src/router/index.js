@@ -4,17 +4,17 @@ const routes = [
   {
     path: "/",
     name: "mainPage",
-    component: () => import("../views/mainPage.vue")
+    component: () => import("../views/MainPage.vue")
   },
   {
     path: "/login",
     name: "loginPage",
-    component: () => import("../views/loginPage.vue")
+    component: () => import("../views/LoginPage.vue")
   },
   {
     path: "/register",
     name: "register",
-    component: () => import("../views/registerPage.vue")
+    component: () => import("../views/RegisterPage.vue")
   }
 ];
 

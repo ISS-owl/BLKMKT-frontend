@@ -1,0 +1,79 @@
+@import "../values/_color.scss";
+
+.root-center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-container {
+    width: 600px;
+    height: 400px;
+    background-color: $--neutral;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "icon text text";
+}
+
+.login-icon {
+    grid-area: icon;
+    align-self: center;
+}
+
+.login-icon-wrapper {
+    max-width: 160px;
+    max-height: 160px;
+    margin: auto;
+    display: block;
+}
+
+.login-text {
+    grid-area: text;
+    align-self: start;
+}
+
+.login-text-layout {
+    width: 300px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.login-text-1 {
+    font-size: 20px;
+}
+
+.login-text-2 {
+    font-size: 16px;
+}
+
+.login-text-input {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.login-text-button {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    margin-top: 20px;
+}
+
+.login-text-button>div {
+    display: inline;
+}
+
+.login-split {
+    margin-top: 30px;
+    border-top: 2px solid $--light;
+}
+
+.login-text-copyright {
+    font-size: 14px;
+    width: 300px;
+    margin: auto;
+}

@@ -1,7 +1,11 @@
-@use './style/mainPage.scss';
-@use './style/loginPage.scss';
-@use './style/background.scss';
-@use './style/registerPage.scss';
+@use './style/MainPage.scss';
+@use './style/LoginPage.scss';
+@use './style/Background.scss';
+@use './style/RegisterPage.scss';
+
+@use './style/components/SideBar.scss';
+@use './style/components/UserInfo.scss';
+@use './style//components/ContentTitle.scss';
 
 html {
     font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
