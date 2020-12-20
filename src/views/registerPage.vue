@@ -5,8 +5,8 @@
         <img class="login-icon-wrapper" src="~@/assets/images/icon.png" />
       </div>
       <div class="login-text">
-        <div class="login-text-1 login-text-layout">登入</div>
-        <div class="login-text-2 login-text-layout">
+        <div class="login-text-1">登入</div>
+        <div class="login-text-2">
           Welcome back, please login to your account.
         </div>
         <el-input
@@ -22,17 +22,8 @@
           v-model="input2"
           show-password
         ></el-input>
-        <div class="login-text-layout login-text-button">
-          <div>
-            <el-button type="danger" plain>注册</el-button>
-          </div>
-          <div>
-            <el-button type="danger">登入</el-button>
-          </div>
-        </div>
-
-        <div class="login-text-layout login-split"></div>
-        <div class="login-text-copyright">Copyright © 2020 BLKMKT</div>
+        <el-button type="danger" plain>注册</el-button>
+        <el-button type="danger">登入</el-button>
       </div>
     </div>
   </div>

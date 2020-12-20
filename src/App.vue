@@ -5,6 +5,5 @@
 </template>
 
 <style lang="scss">
-@use "./sass/index.scss";
 </style>
 
