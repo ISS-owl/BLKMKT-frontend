@@ -1,0 +1,46 @@
+@import "../../values/_color.scss";
+
+.gooditem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+    width: 200px;
+    background-color: $--white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    border-radius: 7px;
+    color: $--text_color;
+}
+
+.gooditem:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .48), 0 0 6px rgba(0, 0, 0, .12);
+
+}
+
+.gooditem-img {
+    max-width: 120px;
+    max-height: 80px;
+    display: block;
+    margin-top: 5px;
+}
+
+.gooditem-name {
+    margin-top: 2px;
+    font-size: 17px;
+}
+
+.gooditem-price {
+    margin-top: 2px;
+    font-size: 15px;
+    color: $--red;
+}
+
+.gooditem-like {
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+.gooditem-like>span {
+    font-size: 15px;
+    color: $--indigo;
+}

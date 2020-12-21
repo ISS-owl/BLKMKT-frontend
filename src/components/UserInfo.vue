@@ -11,7 +11,9 @@
     <div class="userinfo-icon">
       <el-popover placement="bottom" :width="100" trigger="hover">
         <template #reference>
-          <i class="el-icon-shopping-cart-2"></i>
+          <el-badge :value="3" class="item" type="primary">
+            <i class="el-icon-shopping-cart-2"></i>
+          </el-badge>
         </template>
         <div class="userinfo-hover-text">我的购物车</div>
       </el-popover>
@@ -19,7 +21,7 @@
     <div class="userinfo-icon">
       <el-popover placement="bottom" :width="100" trigger="hover">
         <template #reference>
-          <i class="el-icon-goods"></i>
+          <i class="el-icon-plus"></i>
         </template>
         <div class="userinfo-hover-text">上架商品</div>
       </el-popover>

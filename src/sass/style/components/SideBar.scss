@@ -1,8 +1,8 @@
 @import "../../values/_color.scss";
 
 .sidebar {
-    display: flex;
     display: inline-flex;
+    position: fixed;
     flex-direction: column;
     ;
     align-items: center;

@@ -1,0 +1,18 @@
+@import "../../values/_color.scss";
+
+.itemview-wrapper {
+    width: 600px;
+    color: $--text_color;
+}
+
+.itemview-wrapper>div {
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    background-color: $--white;
+}
+
+.itemview-title {
+    font-size: 23px;
+    width: 100%;
+    padding: 20px;
+}

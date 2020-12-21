@@ -2,10 +2,13 @@
 @use './style/LoginPage.scss';
 @use './style/Background.scss';
 @use './style/RegisterPage.scss';
+@use './style/ItemPage.scss';
 
 @use './style/components/SideBar.scss';
 @use './style/components/UserInfo.scss';
 @use './style//components/ContentTitle.scss';
+@use './style/components/GoodItem.scss';
+@use './style/components/ItemView.scss';
 
 html {
     font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
