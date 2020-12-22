@@ -11,7 +11,7 @@
     <div class="userinfo-icon">
       <el-popover placement="bottom" :width="100" trigger="hover">
         <template #reference>
-          <el-badge :value="3" class="item" type="primary">
+          <el-badge :value="3" class="item" type="danger">
             <i class="el-icon-shopping-cart-2"></i>
           </el-badge>
         </template>

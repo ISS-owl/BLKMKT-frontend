@@ -1,0 +1,28 @@
+@import "../values/_color.scss";
+
+.search {
+    width: 1000px;
+    margin-left: 36px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    background-color: $--white;
+    padding: 25px;
+}
+
+.search-item {
+    padding: 10px 20px;
+}
+
+.search-item-title {
+    display: inline-block;
+    min-width: 120px;
+    color: $--dark;
+    font-size: 18px;
+}
+
+.search-item-input {
+    width: 200px;
+}
+
+.search-item-select {}

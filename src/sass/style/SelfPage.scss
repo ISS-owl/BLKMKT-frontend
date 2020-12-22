@@ -1,0 +1,62 @@
+@import "../values/_color.scss";
+
+.selfpage {
+    width: 700px;
+    color: $--text_color;
+    display: grid;
+    grid-template-columns: 400px 300px;
+    grid-template-areas: "leftpart rightpart";
+    align-items: start;
+    justify-items: stretch;
+    margin: 20px auto 0px;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    background-color: $--white;
+}
+
+.selfpage-info {
+    grid-area: leftpart;
+    padding: 20px;
+}
+
+.selfpage-img {
+    grid-area: rightpart;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.selfpage-info-title {
+    color: $--dark;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.selfpage-info-input {
+    padding: 5px;
+}
+
+.selfpage-info-input input {
+    font-size: 16px;
+}
+
+.selfpage-img-wrapper {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.selfpage-img-wrapper>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.selfpage-info-iconwrapper {
+    padding: 15px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.selfpage-info-iconwrapper span {
+    font-size: 16px;
+}

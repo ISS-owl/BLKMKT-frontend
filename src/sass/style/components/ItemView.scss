@@ -15,4 +15,82 @@
     font-size: 23px;
     width: 100%;
     padding: 20px;
+    margin-bottom: 20px;
+}
+
+.itemview-subtitle {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.itemview-description {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.itemview-split {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $--border;
+}
+
+.itemview-center {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "leftpart rightpart";
+    justify-items: start;
+    align-items: center
+}
+
+.itemview-img {
+    width: 200px;
+    height: 150px;
+    justify-self: center;
+    grid-area: leftpart;
+}
+
+.itemview-info {
+    grid-area: rightpart;
+    align-self: start;
+    padding-left: 30px;
+}
+
+.itemview-info-wrapper {
+    width: 240px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $--light;
+}
+
+.itemview-info-cart {
+    margin-top: 20px;
+}
+
+.itemview-info-count {
+    width: 110px;
+}
+
+.itemview-info-count>span {
+    width: 30px;
+}
+
+.itemview-info-button {
+    margin-left: 16px;
+}
+
+.itemview-itemcomment {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.itemview-post {
+    padding-top: 20px;
+}
+
+.itemview-button {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row-reverse;
 }

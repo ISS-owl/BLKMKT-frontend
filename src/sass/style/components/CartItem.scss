@@ -1,0 +1,57 @@
+@import "../../values/_color.scss";
+
+.cartitem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1100px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.cartitem-img {
+    width: 120px;
+    height: 90px;
+}
+
+.cartitem-img>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cartitem div {
+    font-size: 18px;
+}
+
+.cartitem div:nth-child(2) {
+    font-size: 19px;
+    padding-left: 120px;
+    width: 100px;
+    color: $--blue;
+}
+
+.cartitem div:nth-child(3) {
+    font-size: 17px;
+
+    padding-left: 80px;
+    width: 100px;
+}
+
+.cartitem div:nth-child(4) {
+    font-size: 17px;
+    color: $--dark;
+    padding-left: 110px;
+    width: 100px;
+}
+
+.cartitem div:nth-child(5) {
+    font-size: 18px;
+    color: $--danger;
+    padding-left: 30px;
+    width: 100px;
+}
+
+.cartitem div:nth-child(6) {
+    padding-left: 100px;
+}

@@ -8,12 +8,15 @@
 @use './style/MygoodPage.scss';
 @use './style/CartPage.scss';
 @use './style/EditPage.scss';
+@use './style/CreateGood.scss';
 
 @use './style/components/SideBar.scss';
 @use './style/components/UserInfo.scss';
 @use './style//components/ContentTitle.scss';
 @use './style/components/GoodItem.scss';
 @use './style/components/ItemView.scss';
+@use './style/components/CartItem.scss';
+@use './style/components/ItemComment.scss';
 
 html {
     font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
