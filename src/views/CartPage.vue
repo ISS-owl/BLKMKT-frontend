@@ -1,9 +1,9 @@
 <template>
   <div class="main">
-    <side-bar class="main-sidebar"></side-bar>
+    <side-bar pos="4" class="main-sidebar"></side-bar>
     <div class="main-right">
       <user-info></user-info>
-      <content-title></content-title>
+      <content-title title="我的购物车"></content-title>
       <div class="cartpage-wrapper">
         <div class="cartpage-title">
           <span>图片</span>

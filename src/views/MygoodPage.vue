@@ -25,6 +25,7 @@ import SideBar from "../components/SideBar.vue";
 import UserInfo from "../components/UserInfo.vue";
 import ContentTitle from "../components/ContentTitle.vue";
 import GoodItem from "../components/GoodItem.vue";
+import defaultItemImg from "../assets/images/default_item.jpg";
 export default {
   name: "mainPage",
   components: {

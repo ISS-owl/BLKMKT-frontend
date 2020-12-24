@@ -1,12 +1,18 @@
 <template>
   <div class="ContentTitle">
-    <div class="ContentTitle-text">热销商品</div>
+    <div class="ContentTitle-text">{{ title }}</div>
   </div>
 </template>
 
 <script>
 export default {
   name: "ContentTitle",
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 
