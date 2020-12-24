@@ -11,7 +11,7 @@
     <div class="userinfo-icon">
       <el-popover placement="bottom" :width="100" trigger="hover">
         <template #reference>
-          <el-badge :value="3" class="item" type="danger">
+          <el-badge :value="itemCount" class="item" type="danger">
             <i class="el-icon-shopping-cart-2"></i>
           </el-badge>
         </template>
@@ -50,13 +50,17 @@ export default {
     };
   },
   computed: {
+    itemCount() {
+      let sum = 0;
+      this.$store.state.cart.forEach((item) => {
+        sum += item.count;
+      });
+      return sum;
+    },
     imgUrlChecked() {
       return this.imgUrl == "" || this.imgUrl == null
         ? defaultUserImg
         : this.imgUrl;
-    },
-    itemCount() {
-      return null; /* TODO:设置itemCount computed格式有问题 */
     },
   },
   methods: {
@@ -67,7 +71,7 @@ export default {
       this.$router.push("/cart");
     },
     toCreate() {
-      this.$$router.push("/creategood");
+      this.$router.push("/creategood");
     },
   },
   mounted() {

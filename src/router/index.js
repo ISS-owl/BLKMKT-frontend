@@ -21,7 +21,7 @@ const routes = [
     component: () => import("../views/RegisterPage.vue")
   },
   {
-    path: "/item",
+    path: "/item/:goodId",
     name: "item",
     component: () => import("../views/ItemPage.vue")
   },

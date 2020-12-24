@@ -4,24 +4,23 @@
     <div class="main-right">
       <user-info></user-info>
       <content-title title="热销商品"></content-title>
-      <div class="main-item-list">
-        <good-item class="item0"> </good-item>
-        <good-item class="item1"> </good-item>
-        <good-item class="item2"> </good-item>
-        <good-item class="item3"> </good-item>
-        <good-item class="item4"> </good-item>
-        <good-item class="item5"> </good-item>
-        <good-item class="item6"> </good-item>
-        <good-item class="item7"> </good-item>
-        <good-item class="item8"> </good-item>
-        <good-item class="item9"> </good-item>
-        <good-item class="item10"> </good-item>
-        <good-item class="item11"> </good-item>
-        <good-item class="item12"> </good-item>
-        <good-item class="item13"> </good-item>
-        <good-item class="item14"> </good-item>
+      <div v-if="itemArray" class="main-item-list">
+        <good-item
+          v-for="item in itemArray"
+          :key="item.id"
+          :id="item.id"
+          :index="item.index"
+        >
+        </good-item>
+
         <div class="main-item-pagination">
-          <el-pagination background layout="prev, pager, next" :total="100">
+          <el-pagination
+            @current-change="handlePageChange"
+            :page-size="15"
+            background
+            layout="prev, pager, next"
+            :total="total"
+          >
           </el-pagination>
         </div>
       </div>
@@ -38,30 +37,78 @@ import GoodItem from "../components/GoodItem.vue";
 export default {
   name: "mainPage",
   data() {
-    return {};
+    return {
+      total: 15,
+      itemArray: [],
+      page: 1,
+    };
   },
-  method: {
+  methods: {
     generateClass(index) {
       return `item${index}`;
+    },
+    handlePageChange(page) {
+      this.page = page;
+      axiosInstance({
+        method: "get",
+        url: "/good/good/search",
+        params: {
+          pageNum: this.page,
+          pageSize: 15,
+        },
+      }).then((res) => {
+        if (res.data.code == 200) {
+          this.itemArray = [];
+          res.data.data.goodModelList.forEach((value, index) => {
+            value.index = index;
+            this.itemArray.push(value);
+          });
+        }
+      });
+    },
+    nextPage() {
+      this.page = this.page + 1;
+      this.handleFetchItemData();
+    },
+    prePage() {
+      this.page = this.page - 1;
+      this.handleFetchItemData();
+    },
+    handleFetchItemData() {
+      axiosInstance({
+        method: "get",
+        url: "/good/good/search",
+        params: {
+          pageNum: this.page,
+          pageSize: 15,
+        },
+      }).then((res) => {
+        if (res.data.code == 200) {
+          this.itemArray = [];
+          res.data.data.goodModelList.forEach((value, index) => {
+            value.index = index;
+            this.itemArray.push(value);
+          });
+        }
+      });
     },
   },
   mounted() {
     axiosInstance({
       method: "get",
-      url: "/search/good",
+      url: "/good/good/search",
       params: {
-        pageNum: 1,
+        pageNum: this.page,
         pageSize: 15,
       },
     }).then((res) => {
       if (res.data.code == 200) {
-        let mes = this.$message({
-          type: "success",
-          showClose: true,
-          message: "获取商品成功！",
-          duration: 1500,
+        this.total = res.data.data.total;
+        this.itemArray = [];
+        res.data.data.goodModelList.forEach((value, index) => {
+          value.index = index;
+          this.itemArray.push(value);
         });
-        console.log(res.data);
       }
     });
   },

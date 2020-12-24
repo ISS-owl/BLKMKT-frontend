@@ -1,16 +1,11 @@
 <template>
   <div class="main">
-    <side-bar class="main-sidebar"></side-bar>
+    <side-bar pos="3" class="main-sidebar"></side-bar>
     <div class="main-right">
       <user-info></user-info>
-      <content-title></content-title>
+      <content-title title="我的上架"></content-title>
       <div class="main-item-list">
         <good-item class="item0"> </good-item>
-        <good-item class="item1"> </good-item>
-        <good-item class="item2"> </good-item>
-        <good-item class="item3"> </good-item>
-        <good-item class="item4"> </good-item>
-        <good-item class="item5"> </good-item>
         <div class="main-item-pagination">
           <el-pagination background layout="prev, pager, next" :total="100">
           </el-pagination>
@@ -28,6 +23,14 @@ import GoodItem from "../components/GoodItem.vue";
 import defaultItemImg from "../assets/images/default_item.jpg";
 export default {
   name: "mainPage",
+  data() {
+    return {
+      total: 15,
+      itemArray: [],
+      page: 1,
+    };
+  },
+  mounted() {},
   components: {
     SideBar,
     UserInfo,

@@ -99,7 +99,7 @@
               type="info"
               class="selfpage-info-icon"
               >取消修改</el-button
-            ><!-- TODO：暂时先不要点取消修改 -->
+            >
           </div>
         </div>
         <div class="selfpage-img">
@@ -174,6 +174,7 @@ export default {
           }
         })
         .then((error) => {
+          console.log("selfpage error");
           console.log(error);
         });
     },
@@ -203,6 +204,7 @@ export default {
           }
         })
         .then((error) => {
+          console.log("selfpage error");
           console.log(error);
         });
     },

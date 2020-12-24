@@ -62,7 +62,6 @@ export default {
   props: {
     pos: {
       type: String,
-      required: true,
     },
   },
   mounted() {

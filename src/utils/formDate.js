@@ -12,6 +12,7 @@ let formatDate = function (date) {
     return y + '-' + m + '-' + d + ' ' + h + ':' + minute + ':' + second;
 };
 
+export default formatDate;
 let d = new Date("2020-12-13T12:25:18.000+0000");
 
 console.log(formatDate(d));

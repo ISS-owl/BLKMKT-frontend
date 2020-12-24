@@ -3,9 +3,9 @@
     <side-bar class="main-sidebar"></side-bar>
     <div class="main-right">
       <user-info></user-info>
-      <content-title></content-title>
+      <content-title title="商品详情"></content-title>
       <div class="itempage-wrapper">
-        <item-view></item-view>
+        <item-view :id="Number(this.$route.params.goodId)"></item-view>
       </div>
     </div>
   </div>
@@ -21,6 +21,10 @@ import defaultItemImg from "../assets/images/default_item.jpg";
 
 export default {
   name: "ItemPage",
+  data() {
+    return {};
+  },
+  mounted() {},
   components: {
     SideBar,
     UserInfo,
