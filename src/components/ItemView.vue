@@ -19,7 +19,6 @@
           <el-input-number
             class="itemview-info-count"
             v-model="buyNumber"
-            @change="handleChange"
             :min="0"
             :max="currentSum"
             label="描述文字"
@@ -106,6 +105,7 @@ export default {
   },
   methods: {
     addToCart() {
+      console.log("test case");
       let item = {};
       item.imgUrl = this.itemUrlChecked;
       item.title = this.title;
@@ -120,8 +120,6 @@ export default {
         duration: 1500,
       });
     },
-  },
-  methods: {
     postComment() {
       axiosInstance({
         method: "post",

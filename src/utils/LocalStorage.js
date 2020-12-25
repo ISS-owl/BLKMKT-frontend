@@ -1,4 +1,5 @@
 import axiosInstance from '../utils';
+import axios from "axios";
 function setLocalStorage(studentId, password, token, refreshToken) {
     localStorage.setItem("studentId", studentId);
     localStorage.setItem("password", password);
